@@ -1,0 +1,37 @@
+<svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Strategy orchestration">
+  <defs>
+    <linearGradient id="sBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EAF6FE"/><stop offset="1" stop-color="#E2ECFA"/>
+    </linearGradient>
+    <linearGradient id="sTarget" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#35C7E0"/><stop offset="1" stop-color="#114B9E"/>
+    </linearGradient>
+    <linearGradient id="sNode" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5FD3F2"/><stop offset="1" stop-color="#0E5BC4"/>
+    </linearGradient>
+    <filter id="sS" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#0B3E8C" flood-opacity=".26"/>
+    </filter>
+  </defs>
+  <rect width="320" height="240" rx="18" fill="url(#sBg)"/>
+  <!-- flow path -->
+  <path d="M52 188 C 96 188 96 132 140 132" fill="none" stroke="#0E5BC4" stroke-opacity=".28" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <path d="M214 96 C 250 96 250 60 286 60" fill="none" stroke="#0E5BC4" stroke-opacity=".28" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <!-- small flow nodes -->
+  <g filter="url(#sS)"><circle cx="52" cy="188" r="17" fill="url(#sNode)"/></g>
+  <rect x="44" y="184" width="16" height="3.4" rx="1.7" fill="#fff"/>
+  <rect x="44" y="190" width="11" height="3.4" rx="1.7" fill="#fff" opacity=".8"/>
+  <g filter="url(#sS)"><circle cx="286" cy="60" r="15" fill="url(#sNode)"/></g>
+  <path d="M280 60 l4 4 l8 -8" fill="none" stroke="#fff" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- bullseye target -->
+  <g filter="url(#sS)"><circle cx="168" cy="116" r="58" fill="#fff"/></g>
+  <circle cx="168" cy="116" r="58" fill="none" stroke="url(#sTarget)" stroke-width="10"/>
+  <circle cx="168" cy="116" r="38" fill="none" stroke="url(#sTarget)" stroke-width="9" opacity=".7"/>
+  <circle cx="168" cy="116" r="16" fill="url(#sTarget)"/>
+  <!-- arrow to bullseye -->
+  <g filter="url(#sS)">
+    <line x1="222" y1="62" x2="176" y2="108" stroke="#0A2540" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <path d="M168 116 l18 -10 l-2 12 l12 4 Z" fill="#28BEEC"/>
+  <path d="M226 58 l10 -2 l-2 10 Z" fill="#0A2540"/>
+</svg>

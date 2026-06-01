@@ -1,0 +1,40 @@
+<svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Data analytics">
+  <defs>
+    <linearGradient id="dBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EAF6FE"/><stop offset="1" stop-color="#E2ECFA"/>
+    </linearGradient>
+    <linearGradient id="dCyl" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#46C8EE"/><stop offset="1" stop-color="#0E5BC4"/>
+    </linearGradient>
+    <linearGradient id="dTop" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7FE0F8"/><stop offset="1" stop-color="#38B6E6"/>
+    </linearGradient>
+    <linearGradient id="dLine" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#0E5BC4"/><stop offset="1" stop-color="#28BEEC"/>
+    </linearGradient>
+    <filter id="dS" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#0B3E8C" flood-opacity=".24"/>
+    </filter>
+  </defs>
+  <rect width="320" height="240" rx="18" fill="url(#dBg)"/>
+  <!-- database cylinder (left) -->
+  <g filter="url(#dS)">
+    <path d="M58 78 v84 a40 16 0 0 0 80 0 v-84 Z" fill="url(#dCyl)"/>
+    <ellipse cx="98" cy="78" rx="40" ry="16" fill="url(#dTop)"/>
+  </g>
+  <g fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="3">
+    <path d="M58 106 a40 16 0 0 0 80 0"/>
+    <path d="M58 134 a40 16 0 0 0 80 0"/>
+  </g>
+  <ellipse cx="84" cy="74" rx="18" ry="6" fill="#fff" opacity=".35"/>
+  <!-- chart panel (right) -->
+  <g filter="url(#dS)"><rect x="150" y="92" width="116" height="92" rx="14" fill="#fff"/></g>
+  <g>
+    <rect x="166" y="146" width="14" height="22" rx="4" fill="#28BEEC" opacity=".55"/>
+    <rect x="188" y="132" width="14" height="36" rx="4" fill="#28BEEC" opacity=".7"/>
+    <rect x="210" y="120" width="14" height="48" rx="4" fill="#0E5BC4" opacity=".55"/>
+    <rect x="232" y="108" width="14" height="60" rx="4" fill="#0E5BC4" opacity=".7"/>
+  </g>
+  <polyline points="166,150 192,134 216,124 244,106" fill="none" stroke="url(#dLine)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="244" cy="106" r="6" fill="#fff" stroke="#0E5BC4" stroke-width="3"/>
+</svg>

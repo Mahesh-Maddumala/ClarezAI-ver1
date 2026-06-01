@@ -1,0 +1,38 @@
+<svg viewBox="0 0 320 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Communication engine">
+  <defs>
+    <linearGradient id="cBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EAF6FE"/><stop offset="1" stop-color="#E2ECFA"/>
+    </linearGradient>
+    <linearGradient id="cMain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2AA6DF"/><stop offset="1" stop-color="#0C357A"/>
+    </linearGradient>
+    <linearGradient id="cSecond" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7FE0F8"/><stop offset="1" stop-color="#28BEEC"/>
+    </linearGradient>
+    <filter id="cS" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#0B3E8C" flood-opacity=".26"/>
+    </filter>
+  </defs>
+  <rect width="320" height="240" rx="18" fill="url(#cBg)"/>
+  <!-- broadcast arcs -->
+  <g fill="none" stroke="#28BEEC" stroke-width="3.5" stroke-linecap="round" opacity=".55">
+    <path d="M246 60 a34 34 0 0 1 0 60"/>
+    <path d="M262 44 a58 58 0 0 1 0 92"/>
+  </g>
+  <!-- secondary bubble (behind) -->
+  <g filter="url(#cS)">
+    <path d="M150 60 h92 a22 22 0 0 1 22 22 v34 a22 22 0 0 1 -22 22 h-58 l-22 20 v-20 h-12 a22 22 0 0 1 -22 -22 v-34 a22 22 0 0 1 22 -22 Z" fill="url(#cSecond)"/>
+  </g>
+  <g fill="#fff" opacity=".95">
+    <circle cx="170" cy="99" r="5"/><circle cx="196" cy="99" r="5"/><circle cx="222" cy="99" r="5"/>
+  </g>
+  <!-- primary bubble (front) -->
+  <g filter="url(#cS)">
+    <path d="M70 96 h104 a24 24 0 0 1 24 24 v40 a24 24 0 0 1 -24 24 h-66 l-28 24 v-24 h-10 a24 24 0 0 1 -24 -24 v-40 a24 24 0 0 1 24 -24 Z" fill="url(#cMain)"/>
+  </g>
+  <ellipse cx="96" cy="118" rx="40" ry="14" fill="#fff" opacity=".12"/>
+  <g stroke="#fff" stroke-width="6" stroke-linecap="round" opacity=".95">
+    <line x1="78" y1="134" x2="170" y2="134"/>
+    <line x1="78" y1="152" x2="150" y2="152"/>
+  </g>
+</svg>
